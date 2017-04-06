@@ -34,7 +34,7 @@
 
 (require 'web-mode)
 
-(defvar narrow-mode-map
+(defvar web-narrow-narrow-mode-map
   (make-keymap))
 
 (defvar web-narrow-mode-map (make-sparse-keymap))
@@ -98,7 +98,7 @@ Argument END end point."
     (with-current-buffer buf
       (narrow-to-region start end)
       (switch-to-buffer buf)
-      (narrow-mode))))
+      (web-narrow-narrow-mode))))
 
 (defun web-narrow-to-region
     (begin end)
