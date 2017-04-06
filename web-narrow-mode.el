@@ -1,5 +1,4 @@
 ;;; web-narrow-mode.el --- quick narrow code block in web-mode
-;;; web-narrow-mode.el narrow your code with new buffer
 
 ;; Copyright (C) 2017 Quanwei
 
@@ -62,19 +61,22 @@
   :lighter " wnarrow"
   :keymap web-narrow-mode-map)
 
+
 (defun web-narrow-to-element
     ()
+  "Narrow by html element."
   (interactive)
-    (let (
-          (buf (clone-indirect-buffer nil nil))
-          (begin (save-excursion
-                   (goto-char (web-mode-element-beginning-position))
-                   (line-beginning-position)))
-          (end (+ 1 (web-mode-element-end-position))))
-      (web-narrow-to-region-raw begin end)))
+  (let (
+        (buf (clone-indirect-buffer nil nil))
+        (begin (save-excursion
+                 (goto-char (web-mode-element-beginning-position))
+                 (line-beginning-position)))
+        (end (+ 1 (web-mode-element-end-position))))
+    (web-narrow-to-region-raw begin end)))
 
 (defun web-narrow-to-block
     ()
+  "Narrow by code block."
   (interactive)
   (save-excursion
     (let ((begin (progn
@@ -88,7 +90,10 @@
 
 
 (defsubst web-narrow-to-region-raw
-    (start end)
+  (start end)
+  "Narrow subroute.
+Argument START start point.
+Argument END end point."
   (let ((buf (clone-indirect-buffer nil nil)))
     (with-current-buffer buf
       (narrow-to-region start end)
@@ -97,6 +102,9 @@
 
 (defun web-narrow-to-region
     (begin end)
+  "Narrow region.
+Argument BEGIN begin point.
+Argument END end point."
   (interactive "r")
   (web-narrow-to-region-raw begin end))
 
