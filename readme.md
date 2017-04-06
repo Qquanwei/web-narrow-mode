@@ -2,6 +2,9 @@
 
 web-narrow is a minor mode for emacs . it will help edit hybrd format file. sach as `jsx` or `vue`
 
+[![asciicast](https://asciinema.org/a/96m0wv5iplqp3u1kft0ge73rp.png)](https://asciinema.org/a/96m0wv5iplqp3u1kft0ge73rp)
+
+
 ## install & setup
 
 (add-hook 'web-mode-hook 'web-narrow-mode)
