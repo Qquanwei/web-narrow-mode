@@ -1,0 +1,23 @@
+# web-narrow-mode
+
+web-narrow is a minor mode for emacs . it will help edit hybrd format file. sach as `jsx` or `vue`
+
+## install & setup
+
+(add-hook 'web-mode-hook 'web-narrow-mode)
+
+## keymap
+
+some default keymap for web-narrow-mode
+
+* `C-c C-u u` web-narrow-to-element : narrow a html element to buffer
+* `C-c C-u j` web-narrow-to-block : narrow content with in `{...}`
+* `C-c C-u l` web-narrow-to-region : narrow region
+
+when you narrowed your code. will set `narrow-mode` in that buffer.
+
+## narrow-mode
+
+keymap
+
+* `C-c C-k` quit current edit(narrowed), same as `kill-buffer`
