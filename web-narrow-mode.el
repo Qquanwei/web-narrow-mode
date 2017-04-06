@@ -1,3 +1,4 @@
+;;; web-narrow-mode.el --- quick narrow code block in web-mode
 ;;; web-narrow-mode.el narrow your code with new buffer
 
 ;; Copyright (C) 2017 Quanwei
@@ -60,15 +61,6 @@
   "web-narrow split your code"
   :lighter " wnarrow"
   :keymap web-narrow-mode-map)
-
-
-;; from end to begin
-(defun --mark-block
-    ()
-  (interactive)
-  (backward-up-list)
-  (set-mark-command nil)
-  (forward-list))
 
 (defun web-narrow-to-element
     ()
