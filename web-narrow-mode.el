@@ -50,10 +50,10 @@
 
 
 (define-minor-mode
-  narrow-mode
+  web-narrow-narrow-mode
   "in narrow-mode can quickly quit"
   :lighter " narrow"
-  :keymap narrow-mode-map)
+  :keymap web-narrow-narrow-mode-map)
 
 (define-minor-mode
   web-narrow-mode
