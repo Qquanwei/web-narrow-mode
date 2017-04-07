@@ -35,7 +35,7 @@
 (require 'web-mode)
 
 (defvar web-narrow-narrow-mode-map
-  (make-keymap))
+  (make-sparse-keymap))
 
 (defvar web-narrow-mode-map (make-sparse-keymap))
 
@@ -43,10 +43,7 @@
 (define-key web-narrow-mode-map (kbd "C-c C-u j") 'web-narrow-to-block)
 (define-key web-narrow-mode-map (kbd "C-c C-u l") 'web-narrow-to-region)
 
-(define-key
-  narrow-mode-map
-  (kbd "C-c C-k")
-  (lambda () (interactive) (kill-buffer (current-buffer))))
+(define-key web-narrow-narrow-mode-map (kbd "C-c C-k") 'kill-this-buffer)
 
 
 (define-minor-mode
