@@ -5,7 +5,7 @@
 ;; Author: Qquanwei <quanwei9958@126.com>
 ;; Maintainer: Johan Andersson <quanwei9958@126.com>
 ;; Version: 0.1.0
-;; Keywirds: web-mode,react,narrow,web
+;; Keywords: web-mode,react,narrow,web
 ;; URL: https://github.com/Qquanwei/web-narrow-mode
 ;; Package-Requires: ((web-mode "14.0.27"))
 
