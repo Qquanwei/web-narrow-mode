@@ -5,7 +5,7 @@ web-narrow is a minor mode for emacs . it will help edit hybrd format file. sach
 [![asciicast](https://asciinema.org/a/96m0wv5iplqp3u1kft0ge73rp.png)](https://asciinema.org/a/96m0wv5iplqp3u1kft0ge73rp)
 
 
-idear from http://demonastery.org/2013/04/emacs-narrow-to-region-indirect/
+inspire from http://demonastery.org/2013/04/emacs-narrow-to-region-indirect/
 
 ## install & setup
 
