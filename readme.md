@@ -1,3 +1,5 @@
+[![MELPA](https://melpa.org/packages/web-narrow-mode-badge.svg)](https://melpa.org/#/web-narrow-mode)
+
 # web-narrow-mode
 
 web-narrow is a minor mode for emacs . it will help edit hybrd format file. sach as `jsx` or `vue`
